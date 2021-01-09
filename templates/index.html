@@ -1,0 +1,18 @@
+<!doctype HTML>
+{% load static %}
+<html>
+<head>
+    <title>
+        Welcome to Foodr
+    </title>
+</head>
+<body>
+<h1>Welcome to Foodr, here is the list of restaurants available with us</h1>
+{% for obj in restaurant_list %}
+    <a href="{{ obj.id }}"><p>{{ obj.name }}</p></a>
+    <p>Address: {{ obj.address }}</p>
+    <p>{{ obj.id }}</p>
+    <br><br><br>
+{% endfor %}
+</body>
+</html>

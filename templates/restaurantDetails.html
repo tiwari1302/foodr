@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details for {{ restaurant_list }}</title>
+</head>
+<body>
+<h1>Details of the restaurant items</h1>
+{% for obj in orderlist %}
+    <p>{{ obj }}</p>
+{% endfor %}
+</body>
+</html>
